@@ -1,0 +1,31 @@
+.encabezado{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #DDCEBB;
+    box-sizing: border-box;
+}
+
+.encabezado__button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #121212;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.encabezado__button:hover{
+    color: #B2464B;
+}
+
+.encabezado__img{
+    width: 10em;
+}
