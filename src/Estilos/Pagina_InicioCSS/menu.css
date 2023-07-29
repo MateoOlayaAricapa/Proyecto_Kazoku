@@ -1,0 +1,38 @@
+.menu{
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu__info{
+    max-width: 25em;
+    text-align: center;
+}
+
+.menu__info h1{
+    color: #B2464B;
+    font-size: 2.8em;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.menu__info p{
+    color: #292929;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu__tarjetas{
+    max-width: 75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}

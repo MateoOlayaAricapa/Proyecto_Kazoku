@@ -1,7 +1,6 @@
 .introducion{
-    width: 100vw;
+    width: 99vw;
     height: 80vh;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +17,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    background-color: brown;
 }
 
 .introducion__reseña__imagen{
@@ -58,7 +56,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: chartreuse;
 }
 
 .introducion__info__titulo{
@@ -113,7 +110,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
 }
 
 .introducion__info__imagen img{
