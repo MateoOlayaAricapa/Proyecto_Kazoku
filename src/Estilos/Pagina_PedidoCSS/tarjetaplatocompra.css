@@ -1,0 +1,119 @@
+.tarjetaPlatoCompra{
+    width: 95%;
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: coral;
+}
+
+/*Estilos para el botón de quitar plato factura*/
+.tarjetaPlatoCompra__botonQuitar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: blue;
+}
+
+.tarjetaPlatoCompra__botonQuitar button{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.tarjetaPlatoCompra__botonQuitar button:hover{
+    background-color: #B2464B;
+}
+
+.tarjetaPlatoCompra__botonQuitar button img{
+    width: 50%;
+}
+
+/*Estilos para la imagen del plato a comprar*/
+.tarjetaPlatoCompra__imagen{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+}
+
+.tarjetaPlatoCompra__imagen img{
+    width: 100%;
+    border-radius: 0.6em;
+    object-fit: cover;
+}
+
+/*Estilos para la información del plato a comprar*/
+.tarjetaPlatoCompra__info{
+    width: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: chartreuse;
+}
+
+.tarjetaPlatoCompra__info__nombre{
+    width: 100%;
+}
+
+.tarjetaPlatoCompra__info__nombre h4{
+    color: #B2464B;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.tarjetaPlatoCompra__info__precio{
+    width: 100%;
+}
+
+.tarjetaPlatoCompra__info__precio h4{
+    color: #000;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tarjetaPlatoCompra__info__cantidad{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1em;
+}
+
+.tarjetaPlatoCompra__info__cantidad h4{
+    color: #000;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tarjetaPlatoCompra__info__cantidad button{
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 1em;
+    background-color: #E7E7E7;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tarjetaPlatoCompra__info__cantidad button img{
+    width: 60%;
+    object-fit: cover;
+}

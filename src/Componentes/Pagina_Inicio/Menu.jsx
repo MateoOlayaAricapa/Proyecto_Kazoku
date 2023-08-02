@@ -18,7 +18,8 @@ function SeccionMenu({ListaDatosMenu}){
         <div className="menu__tarjetas">
 
             {ArregloMenu.map((dato, i) => <TarjetaComida 
-            key={i} 
+            key={i}
+            IDmenu = {dato.id_menu} 
             titulo={dato.titulo} 
             imagen={dato.imagen} 
             descripcion={dato.descripcion_general}/>)}

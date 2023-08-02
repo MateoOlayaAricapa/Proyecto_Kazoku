@@ -1,0 +1,108 @@
+.platos{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: blue;
+    gap: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Estilos sección barra búsqueda y botón regresar*/
+.platos__busqueda{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.platos__busqueda button{
+    width: 4.1em;
+    height: 4.1em;
+    background-color: #B2464B;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platos__busqueda button img{
+    width: 40%;
+    object-fit: cover;
+    transform: rotate(180deg);
+}
+
+.platos__busqueda__barra{
+    background-color: white;
+    width: 37em;
+    height: 3.5em;
+    border-radius: 1.8em;
+    box-shadow: 0px 4px 10px 0px rgba(237, 237, 237, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platos__busqueda__barra input{
+    width: 85%;
+    height: 65%;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #292929;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.platos__busqueda__barra button{
+    width: 3.5em;
+    height: 3.5em;
+    background-color: transparent;
+}
+
+.platos__busqueda__barra button img{
+    width: 60%;
+    transform: rotate(0deg);
+}
+
+/*Estilos para la sección de categorías menú*/
+.platos__menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+/*Estilos para el título de platos*/
+.platos__titulo{
+    width: 100%;
+}
+
+.platos__titulo h1{
+    color: #292929;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*Estilos para las tarjetas de platos menú*/
+.platos__tarjetas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+
+

@@ -1,0 +1,27 @@
+.BotonMenu{
+    width: 11em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3em;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    gap: 0.5em;
+    transition: 0.3s ease-in-out;
+}
+
+.BotonMenu:hover{
+    box-shadow: 0px 0px 10px 0px rgba(178, 70, 75, 0.25);
+}
+
+.BotonMenu img{
+    width: 25%;
+}
+
+.BotonMenu h3{
+    color: #121212;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+}

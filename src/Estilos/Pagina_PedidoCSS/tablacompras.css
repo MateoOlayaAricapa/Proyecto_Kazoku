@@ -1,0 +1,124 @@
+.tablaCompras{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tablaCompras__tabla{
+    width: 80%;
+    height: 95%;
+    border-radius: 1.8em;
+    padding: 1em 2em 1em 2em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/*Estilos sección título de la tabla*/
+.tablaCompras__tabla__titulo{
+    width: 100%;
+    background-color: coral;
+}
+
+.tablaCompras__tabla__titulo h2{
+    color: #000;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*Estilos sección platos a comprar*/
+.tablaCompras__tabla__platos{
+    width: 100%;
+    height: 37em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1em;
+    background-color: darkcyan;
+    overflow-y: scroll;
+}
+
+.tablaCompras__tabla__platos::-webkit-scrollbar{
+    width: 0.3em;
+}
+
+.tablaCompras__tabla__platos::-webkit-scrollbar-thumb{
+    background-color: #FFF0DE;
+    border-radius: 4px;
+}
+
+/*Estilos sección para la factura*/
+.tablaCompras__tabla__factura{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aquamarine;
+    gap: 1em;
+}
+
+.tablaCompras__tabla__factura h2{
+    color: #000;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tablaCompras__tabla__factura button{
+    border: none;
+    width: 100%;
+    height: 3em;
+    border-radius: 0.6em;
+    background: #B2464B;
+    cursor: pointer;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tablaCompras__tabla__factura__info{
+    width: 100%;
+    height: 8em;
+    border-radius: 0.6em;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tablaCompras__tabla__factura__info__totalPago{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.tablaCompras__tabla__factura__info__totalPago h4{
+    color: #636363;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tablaCompras__tabla__factura__info__totalPago h3{
+    color: #000;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 600;
+}

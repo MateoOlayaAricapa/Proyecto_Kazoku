@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "../../Estilos/Pagina_InicioCSS/Inicio.css" 
 
 //Importando componentes secundarias
@@ -6,8 +6,14 @@ import SeccionEncabezado from "./Encabezado";
 import SeccionIntroducion from "./Introduccion";
 import SeccionMenu from "./Menu";
 
+//Importando objeto de Context API
+import { DataContexto } from "../../Contexto/contextoAPI";
+
 //Esta componente tiene la lógica de la página inicial del proyecto
 function Pagina_Inicio(){
+    
+    //Utilizando el contextAPI
+    const {setListaDatosMenu} = useContext(DataContexto);
 
     const [ArregloDatosMenu, setArregloDatosMenu] = useState([]);
 
@@ -17,7 +23,10 @@ function Pagina_Inicio(){
 
         fetch("http://localhost:5297/api/DatosMenu")
         .then(ArregloDatos => ArregloDatos.json())
-        .then(ArregloDatos => setArregloDatosMenu(ArregloDatos))
+        .then(ArregloDatos => {
+            setArregloDatosMenu(ArregloDatos);
+            setListaDatosMenu(ArregloDatos);
+        })
         .catch(error => console.log(error))
 
     }//Fin función
