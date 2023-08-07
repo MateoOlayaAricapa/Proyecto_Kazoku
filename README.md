@@ -2,7 +2,7 @@
 ## Descripción: 
 Este proyecto abarca el desarrollo de un sitio web para un restaurante japonés ubicado en la ciudad de Cali, Colombia.
 
-Por lo tanto, el objetivo es que se puedan realizar compras de platos de comida de manera ONLINE para un público especifíco. 
+Por otro lado, el objetivo es que se puedan realizar compras de platos de comida de manera ONLINE para un público especifíco. 
 
 ## Tecnologías:
 Se utilizó React js, .NET CORE (entity framework), PostgreSQL y Figma. 
