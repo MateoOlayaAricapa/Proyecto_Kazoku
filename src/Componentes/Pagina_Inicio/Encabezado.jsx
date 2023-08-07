@@ -9,11 +9,11 @@ function SeccionEncabezado(){
 
     return(<div className="encabezado">
 
-        <button className="encabezado__button" type="">Inicio</button>
-        <button className="encabezado__button" type="">Menú</button>
+        <a href="#section__intro" className="encabezado__button" type="">Inicio</a>
+        <a href="#section__menu" className="encabezado__button" type="">Menú</a>
         <img className="encabezado__img" src={ImagenLogo} alt="Imagen que representa el logo del restaurante japonés Kazoku"/>
-        <button className="encabezado__button" type="">Nosotros</button>
-        <button className="encabezado__button" type="">Ubicación</button>
+        <a href="#section__intro" className="encabezado__button" type="">Nosotros</a>
+        <a href="#section__ubication" className="encabezado__button" type="">Ubicación</a>
 
     </div>);
 

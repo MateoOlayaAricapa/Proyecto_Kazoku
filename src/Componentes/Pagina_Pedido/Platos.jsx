@@ -11,7 +11,7 @@ import BotonMenuPedido from "./BotonMenu";
 import TarjetaPlatoMenu from "./TarjetaPlato";
 
 //Esta componente tiene la lógica que mostrará información de los platos
-function SeccionPlatos({DatosMenu, DatosPlatos}){
+function SeccionPlatos({DatosMenu, DatosPlatos, setPlatosSeleccionados, Lista}){
 
     const navegacion = useNavigate();
     const {idMenu} = useParams();
@@ -99,9 +99,9 @@ function SeccionPlatos({DatosMenu, DatosPlatos}){
             {DatosPlatosRelacionados.map((item, i) => 
             <TarjetaPlatoMenu 
             key={i} 
-            nombrePlato={item.nombre}
-            descripcionPlato={item.descripcion}
-            precioPlato={item.precio}/>)}
+            DatoPlato={item} 
+            setPlato={setPlatosSeleccionados}
+            ListaPlatos={Lista}/>)}
 
         </div>
 

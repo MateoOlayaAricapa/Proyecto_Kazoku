@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../Estilos/Pagina_PedidoCSS/tablacompras.css"
 
 //Importando componentes
 import PlatoCompraFactura from "./TarjetaPlatoCompra";
 
 //Esta componente tiene la lógica para mostrar la tabla de compras
-function SeccionTablaCompras(){
+function SeccionTablaCompras({ListaPlatosSeleccionados, setLista, setVentanaProceso, setPrecioTotal, PrecioTotal, setProcesoPago}){
+
+    //Detectando cambios en los datos encontrados en la lista de platos seleccionados
+    useEffect(() => {
+
+        var precio = 0;
+
+        ListaPlatosSeleccionados.map((item) => {
+
+            precio += item.precio;
+
+        });
+
+        setPrecioTotal(precio);
+
+    }, [ListaPlatosSeleccionados]);
 
     return(<div className="tablaCompras">
 
@@ -17,8 +32,12 @@ function SeccionTablaCompras(){
 
            <div className="tablaCompras__tabla__platos">
 
-                <PlatoCompraFactura/>
-                <PlatoCompraFactura/>
+                {ListaPlatosSeleccionados.map((item, i) => 
+                <PlatoCompraFactura
+                key={i} 
+                Datos={item}
+                setListaPlatosCompra={setLista}
+                Lista={ListaPlatosSeleccionados}/>)}
 
            </div>
 
@@ -30,17 +49,17 @@ function SeccionTablaCompras(){
                     
                     <div className="tablaCompras__tabla__factura__info__totalPago">
                         <h4>Total plato(s)</h4>
-                        <h3>4</h3>
+                        <h3>{ListaPlatosSeleccionados.length}</h3>
                     </div>
 
                     <div className="tablaCompras__tabla__factura__info__totalPago">
                         <h4>Total a pagar</h4>
-                        <h3>45.000</h3>
+                        <h3>$ {PrecioTotal}</h3>
                     </div>
 
                 </div>
 
-                <button type="button">Realizar proceso de compra</button>
+                <button type="button" onClick={() => {setVentanaProceso(true); setProcesoPago(true);}}>Realizar proceso de compra</button>
 
            </div>
 

@@ -7,7 +7,7 @@ import IconoAgregar from "../../Multimedia/anadir.png";
 
 //Esta componente tiene la lógica para crear una tarjeta que tiene
 //información de cada plato a vender
-function TarjetaPlatoMenu({nombrePlato, descripcionPlato, precioPlato}){
+function TarjetaPlatoMenu({DatoPlato, setPlato, ListaPlatos}){
 
     return(<div className="tarjetaPlato">
         
@@ -21,8 +21,8 @@ function TarjetaPlatoMenu({nombrePlato, descripcionPlato, precioPlato}){
 
             <div className="tarjetaPlato__info__texto">
                 
-                <h4>{nombrePlato}</h4>
-                <p>{descripcionPlato}</p>
+                <h4>{DatoPlato.nombre}</h4>
+                <p>{DatoPlato.descripcion}</p>
 
             </div>
 
@@ -30,7 +30,7 @@ function TarjetaPlatoMenu({nombrePlato, descripcionPlato, precioPlato}){
 
         <div className="tarjetaPlato__botonPrecio">
             
-            <div className="tarjetaPlato__botonPrecio__boton" onClick={() => console.log("Agregado")}>
+            <div className="tarjetaPlato__botonPrecio__boton" onClick={() => setPlato([...ListaPlatos, DatoPlato])}>
                 
                 <img src={IconoAgregar} alt="Icono que representar agregar plato a la compra"/>
                 <h3>Añadir a la compra</h3>
@@ -39,7 +39,7 @@ function TarjetaPlatoMenu({nombrePlato, descripcionPlato, precioPlato}){
 
             <div className="tarjetaPlato__botonPrecio__precio">
                 
-                <h2>${precioPlato}</h2>
+                <h2>${DatoPlato.precio}</h2>
 
             </div>
 

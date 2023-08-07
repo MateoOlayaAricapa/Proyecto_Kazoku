@@ -5,6 +5,7 @@ import "../../Estilos/Pagina_InicioCSS/Inicio.css"
 import SeccionEncabezado from "./Encabezado";
 import SeccionIntroducion from "./Introduccion";
 import SeccionMenu from "./Menu";
+import SeccionUbicacionRestaurante from "./Ubicacion";
 
 //Importando objeto de Context API
 import { DataContexto } from "../../Contexto/contextoAPI";
@@ -40,6 +41,8 @@ function Pagina_Inicio(){
         <SeccionEncabezado/>
         <SeccionIntroducion/>
         <SeccionMenu ListaDatosMenu={ArregloDatosMenu}/>
+
+        <SeccionUbicacionRestaurante/>
 
     </div>);
 

@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-color: blue;
     gap: 2em;
     font-family: 'Poppins', sans-serif;
 }

@@ -6,7 +6,7 @@ function SeccionMenu({ListaDatosMenu}){
 
     const ArregloMenu = ListaDatosMenu;
 
-    return(<section className="menu">
+    return(<section id="section__menu" className="menu">
         
         <div className="menu__info">
             

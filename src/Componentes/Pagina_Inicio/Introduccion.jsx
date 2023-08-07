@@ -9,7 +9,7 @@ import ImagenFoto2 from "../../Multimedia/FondoMujer2.jpg";
 //Esta componente contiene la lógica que muestra información de introducción
 function SeccionIntroducion(){
 
-    return(<section className="introducion">
+    return(<section id="section__intro" className="introducion">
 
         <div className="introducion__reseña">
 
@@ -35,7 +35,7 @@ function SeccionIntroducion(){
 
                 </div>
 
-                <button type="">EXPLORA AHORA!</button>
+                <a href="#section__menu" type="">EXPLORA AHORA!</a>
 
             </div>
 

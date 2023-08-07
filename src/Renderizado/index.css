@@ -1,4 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #B2464B;
+    border-radius: 4px;
 }

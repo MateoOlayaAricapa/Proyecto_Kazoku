@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: brown;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,7 +23,6 @@
 /*Estilos sección título de la tabla*/
 .tablaCompras__tabla__titulo{
     width: 100%;
-    background-color: coral;
 }
 
 .tablaCompras__tabla__titulo h2{
@@ -43,7 +41,6 @@
     justify-content: start;
     flex-direction: column;
     gap: 1em;
-    background-color: darkcyan;
     overflow-y: scroll;
 }
 
@@ -63,7 +60,6 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    background-color: aquamarine;
     gap: 1em;
 }
 

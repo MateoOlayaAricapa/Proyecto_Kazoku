@@ -1,0 +1,65 @@
+.pagoMensaje{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 60em;
+    height: 33em;
+    border-radius: 1.25em;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.pagoMensaje__texto{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.pagoMensaje__texto h1{
+    color: #B2464B;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pagoMensaje__texto p{
+    color: #404040;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pagoMensaje__texto button{
+    width: 11em;
+    height: 3.4em;
+    border-radius: 0.625em;
+    background: #B2464B;
+    border: none;
+    cursor: pointer;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagoMensaje__imagen{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagoMensaje__imagen img{
+    width: 100%;
+    object-fit: cover;
+}

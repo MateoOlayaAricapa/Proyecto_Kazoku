@@ -1,0 +1,81 @@
+.ventanaProcesoPago{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 42em;
+    height: 43em;
+    background-color: white;
+    border-radius: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5em;
+    gap: 2em;
+}
+
+/*Estilos contenedor título principal*/
+.ventanaProcesoPago__tituloPrincipal{
+    width: 100%;
+}
+
+.ventanaProcesoPago__tituloPrincipal h1{
+    color: #B2464B;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/*Estilos contenedor campos de contactos*/
+.ventanaProcesoPago__camposContacto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+/*Estilos contenedor título método pago*/
+.ventanaProcesoPago__tituloMetodo{
+    width: 100%;
+}
+
+.ventanaProcesoPago__tituloMetodo h1{
+    color: #B2464B;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600; 
+}
+
+/*Estilos contenedor métodos de pago*/
+.ventanaProcesoPago__metodosPago{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Estilos contenedor botones proceso pago*/
+.ventanaProcesoPago__botonesProceso{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.ventanaProcesoPago__botonesProceso button{
+    width: 11em;
+    height: 3.4em;
+    background-color: #B2464B;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.6em;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
