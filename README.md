@@ -7,6 +7,10 @@ Por otro lado, el objetivo es que se puedan realizar compras de platos de comida
 ## Tecnologías:
 Se utilizó React js, .NET CORE (entity framework), PostgreSQL y Figma. 
 
+## Nota Importante:
+En la siguiente ruta de Drive se encuentra la base de datos utilizada, el diseño de la BD (MER) y el servidor web creado.
+Ruta: https://drive.google.com/drive/folders/1-8XDzlz_JA47IqbyughlVqaG4jTMrGOb?usp=sharing.
+
 ## Autor/es:
 * **Mateo Olaya Aricapa**
 
