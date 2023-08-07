@@ -1,4 +1,4 @@
-# Proyecto_Kazoku
+# Proyecto Kazoku
 ## Descripción: 
 Este proyecto abarca el desarrollo de un sitio web para un restaurante japonés ubicado en la ciudad de Cali, Colombia.
 
